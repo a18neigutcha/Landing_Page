@@ -339,3 +339,8 @@
 						});
 
 })(jQuery);
+
+document.getElementById("scroll-to-bottom").addEventListener("click", function () {
+	var contact = document.getElementById('contact');
+	contact.scrollIntoView({block: "start", behavior: "smooth"});
+});
